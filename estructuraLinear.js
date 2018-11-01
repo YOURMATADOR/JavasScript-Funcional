@@ -27,3 +27,22 @@ Caja(num)
 
 let resultado = numeroLetraArr(' 67 ')
 console.log(resultado);
+
+const convertirNumero = num => 
+Caja(num.replace(/\$/g, ""))
+.map(s => +s)
+
+
+const porcentajeANumero = por =>
+Caja(por.replace(/\%/g,""))
+.map( s => +s)
+.map(s => s * .01)
+
+
+const descuento = (dinero,descuento) => 
+convertirNumero(dinero)
+.fuera(s => porcentajeANumero(descuento)
+.fuera( v => s - s * v ));
+
+let resultadoDescuento = descuento('$5.00','20%');
+console.log(resultadoDescuento);
