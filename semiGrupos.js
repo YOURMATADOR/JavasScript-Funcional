@@ -41,3 +41,11 @@ let objeto2 = Map({nombre: primero("NIKO NI"),pagado:boleanos(true),puntos: semi
 
 // ? con la libreira de immutable ext se ejecutan las funciones de los valores del objeto es decir que todos los valores que cuenten con un prototipo concar 
 console.log(objeto1.concat(objeto2).toJS())
+
+const letraCapital = (str) => 
+str
+.split(' ')
+.map(x => x[0].toUpperCase())
+.join('');
+
+console.log(letraCapital("Hola que tal"));
