@@ -45,7 +45,7 @@ console.log(objeto1.concat(objeto2).toJS())
 const letraCapital = (str) => 
 str
 .split(' ')
-.map(x => `${x[0].toUpperCase()}`)
+.map(x => `${x[0].toUpperCase()}-`)
 .join('');
 
 console.log(letraCapital("Hola que tal"));
