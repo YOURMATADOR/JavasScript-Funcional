@@ -50,7 +50,7 @@ str
 const letraMinuscula = (str) => 
 str
 .split(' ')
-.map(x => `${x[0].toLowerCase()}-`)
+.map(x => x[0].toLowerCase())
 .join('');
 
 
