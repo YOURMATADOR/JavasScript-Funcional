@@ -1,6 +1,6 @@
 const {Map} = require("immutable-ext");
 
-const objeto = ({numero:nuevoNombre}) => ({numero:nuevoNombre});
+export const objeto = ({numero:nuevoNombre}) => ({numero:nuevoNombre});
 
 const semi = (x) =>
 ({
