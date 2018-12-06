@@ -47,5 +47,11 @@ str
 .split(' ')
 .map(x => `${x[0].toUpperCase()}-`)
 .join('');
+const letraMinuscula = (str) => 
+str
+.split(' ')
+.map(x => `${x[0].toLowerCase()}-`)
+.join('');
+
 
 console.log(letraCapital("Hola que tal"));
