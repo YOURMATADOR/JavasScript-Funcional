@@ -55,3 +55,6 @@ str
 
 
 console.log(letraCapital("Hola que tal"));
+
+console.log("Consola uno");
+console.log("Consola dos");
